@@ -61,6 +61,8 @@ void setup() {
   
   playerHealth = int(playerHealthDefault);
   constrain(playerHealth,0 ,playerHealthMax);
+  
+  frameRate(60); 
 }
 
 void draw() {
@@ -134,7 +136,6 @@ void draw() {
       stoneX1 = i*piece;
       image(stone1, stoneX1, stoneY1);
       stoneY1+=piece;
-      println(stoneX1,stoneY1);
     }
     
     //stone1 9-16
